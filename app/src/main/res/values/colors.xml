@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="bkColor">#3B6508</color>
+    <color name="bkColor2">#D9D9D9</color>
+    <color name="editText_bk">#40D9D9D9</color>
+    <color name="hintColor">#2564A811</color>
+    <color name="cardBackground">#ffffe8</color>
+    <color name="visiblePassColor">#DADADA</color>
+    <color name="googleCicle">#DB4437</color>
+    <color name="facebookCicle">#4267B2</color>
+    <color name="BackGroundCapacity">#2064A811</color>
+    <color name="lightGray">#d3d3d3</color>
+
+    <color name="blue">#FF005a9c</color>
+    <color name="lightBlue">#ff6691c4</color>
+    <color name="lighterBlue">#ffcdd8ec</color>
+    <color name="controlBackground">#ffffffff</color>
+    <color name="gray">#808080</color>
+</resources>

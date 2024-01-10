@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SignUp">
+
+    <ProgressBar
+        android:id="@+id/signInProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="@color/bkColor"
+            android:textSize="24sp" />
+        <!--Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_SignUp_Name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:boxBackgroundColor="#40D9D9D9"
+            app:boxStrokeColor="@color/bkColor"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:startIconDrawable="@drawable/user_icon"
+            app:startIconTint="@color/bkColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/user_hint"
+                android:inputType="text"
+                android:maxLength="15" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--Email-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_SignUp_Email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:boxBackgroundColor="#40D9D9D9"
+            app:boxStrokeColor="@color/bkColor"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/email_icon"
+            app:startIconTint="@color/bkColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--Password-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_SignUp_Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:boxBackgroundColor="#40D9D9D9"
+            app:boxStrokeColor="@color/bkColor"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="12"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/pass_icon"
+            app:startIconTint="@color/bkColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/password_hint"
+                android:maxLength="12" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Confirm Password-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_SignUpConfirmPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:boxBackgroundColor="#40D9D9D9"
+            app:boxStrokeColor="@color/bkColor"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="12"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/pass_icon"
+            app:startIconTint="@color/bkColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="@string/passwordConfirm_hint"
+                android:inputType="textPassword"
+                android:maxLength="12" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Sign Up Button-->
+        <Button
+            android:id="@+id/signUpbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/bkColor"
+            android:fontFamily="@font/poppinsregular"
+            android:padding="18dp"
+            android:text="@string/sign_up"
+            android:textSize="16sp" />
+        <!--Already have account sign Up-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center"
+                android:text="@string/alreadyhaveacc"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/signIn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:shadowColor="@color/white"
+                android:stateListAnimator="@null"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:textColor="@color/bkColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

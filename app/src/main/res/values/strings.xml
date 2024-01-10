@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Note App</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_hint">Email</string>
+    <string name="user_hint">Name</string>
+    <string name="password_hint">Password</string>
+    <string name="passwordConfirm_hint">Confirm Password</string>
+    <string name="passwordNew_hint">New Password</string>
+    <string name="number_hint">Mobile Number</string>
+    <string name="donthaveacc">Don\'t have an account?</string>
+    <string name="alreadyhaveacc">Already have an account?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_passwordScreen">Forgot Password</string>
+    <string name="forgot_passwordDetails">Don’t worry! It happens. Please enter the address associated with your account.</string>
+    <string name="enterEmailId">Enter Email id</string>
+    <string name="submit">Submit</string>
+    <string name="EnterOTP">Enter OTP</string>
+    <string name="FourDigit_OTPSend">A 4 digit code has been sent to </string>
+    <string name="verify">Verify</string>
+    <string name="getStarted_Text">Eat organic \nfor your well-being</string>
+    <string name="getstarted">Get Started</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="fruits">Fruits</string>
+    <string name="hello_fruit_fragment">Hello Fruit fragment</string>
+    <string name="hello_Veg_fragment">Hello Veg fragment</string>
+</resources>
